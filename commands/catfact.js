@@ -8,7 +8,7 @@ const execute = async (client, msg) => {
 
     axios.request(options).then(function (response) {
         const data = response.data
-    	const fact = fact['fact'];
+    	const fact = data['fact'];
         msg.reply(`*Fact : *${fact}\n\n*© Elsa Wa-Bot*`);
     }).catch(function (error) {
     	console.error(error);
