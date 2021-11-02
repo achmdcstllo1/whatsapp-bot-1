@@ -19,15 +19,15 @@ It is a WhatsApp bot and help you as a Assistant
   </a>
   
   <a href="https://github.com/fazilvk786/whatsapp-bot/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/fazilvk786/whatsapp-bot?color=purple&label=Lisance&style=plastic">
+    <img src="https://img.shields.io/github/license/fazilvk786/whatsapp-bot?color=blue&label=Lisance&style=plastic">
 
   </a>
   <a href="https://github.com/fazilvk786/whatsapp-bot">
-    <img src="https://img.shields.io/github/languages/top/fazilvk786/whatsapp-bot?color=purple&label=Javascript&style=plastic">
+    <img src="https://img.shields.io/github/languages/top/fazilvk786/whatsapp-bot?color=blue&label=Javascript&style=plastic">
 
   </a>
   <a href="https://github.com/phaticusthiccy">
-    <img src="https://img.shields.io/static/v1?label=Author&message=Fazil vk&color=purple&style=plastic">
+    <img src="https://img.shields.io/static/v1?label=Author&message=Fazil vk&color=blue&style=plastic">
 
   </a>
 </p>
