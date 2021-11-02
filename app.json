@@ -16,5 +16,9 @@
       "description": "Puppeteer Session. Get it by running genToken.js",
       "value": ""
     },
+    "DEFAULT_TR_LANG": {
+      "description": "Default Translation Language",
+      "value": "en"
+    }
   }
 }
