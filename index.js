@@ -15,7 +15,7 @@ if(fs.existsSync(SESSION_FILE_PATH)) {
 const client = new Client({
     session: sessionData || config.session,
     puppeteer: {
-        executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+        executablePath: './/chrome//chrome.exe',
     }
 });
 
