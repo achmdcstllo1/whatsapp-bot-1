@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.1",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.15.1",
+    "ytdl-core": "^4.9.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "name": "wabotjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Fazil vk",
+  "license": "LGPL-3.0",
+  "description": ""
+}
