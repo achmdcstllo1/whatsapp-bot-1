@@ -1,31 +1,4 @@
 {
-  
-  "name": "wabotjs",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Fazil vk",
-  "license": "LGPL-3.0",
-  "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-  
-  "scripts": {
-    "start": "node index.js"
-  },
-    "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fazilvk786/whatsapp-bot.git"
-  },
-  "keywords": [
-    "whatsapp",
-    "bot",
-    "elsa",
-    "api",
-    "unlimited",
-    "automatic",
-    "whatsapp web",
-    "whatsapp api",
-    "Elsa Wa-Bot"
-  ],
-
   "dependencies": {
     "axios": "^0.24.0",
     "express": "^4.17.1",
@@ -33,5 +6,14 @@
     "qrcode-terminal": "^0.12.0",
     "whatsapp-web.js": "^1.15.1",
     "ytdl-core": "^4.9.1"
-  }
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "name": "wabotjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Fazil vk",
+  "license": "LGPL-3.0",
+  "description": ""
 }
