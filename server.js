@@ -16,15 +16,11 @@ client.on('qr', qr => {
 
 client.on('authenticated', (session) => {
     sessionData = session;
-    fs.writeFile(SESSION_FILE_PATH, JSON.stringify(session), (err) => {
-        if (err) {
-            console.error(err);
-        }
-    });
+    console.log(session);
 });
 
 client.on('ready', () => {
-    console.log('Client is ready!');
+    console.log('Copy this and past on Heroku Session!');
 });
 
 client.initialize();
