@@ -50,7 +50,7 @@ It is a WhatsApp bot and help you as a Assistant
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fazilvk786/whatsapp-bot)
 
-> [WhatsAsena Wiki (Full Guide)](https://github.com/fazilvk786/whatsapp-bot/wiki) 
+> [Elsa Wa-Bot Wiki (Full Guide)](https://github.com/fazilvk786/whatsapp-bot/wiki) 
 ### The Hard Method (Not Recommend)
 ```js
 $ git clone https://github.com/fazilvk786/whatsapp-bot.git
@@ -62,7 +62,7 @@ $ node index.js
 ##
 
 ### ⚒️ Setup Wiki [Full Guide]
-[![Setup - Kurulum](https://img.icons8.com/clouds/190/000000/settings.png)](https://github.com/fazilvk786/whatsapp-bot/wiki)
+[![Setup](https://img.icons8.com/clouds/190/000000/settings.png)](https://github.com/fazilvk786/whatsapp-bot/wiki)
 
 ##
 
