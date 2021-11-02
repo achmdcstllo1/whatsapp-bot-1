@@ -14,9 +14,7 @@ if(fs.existsSync(SESSION_FILE_PATH)) {
 
 const client = new Client({
     session: sessionData || config.session,
-    puppeteer: {
-        //executablePath: './/chrome//chrome.exe',
-    }
+    puppeteer: { headless: true, args: ["--no-sandbox"] },
 });
 
 client.commands = new Map();
