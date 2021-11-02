@@ -2,8 +2,8 @@
   "name": "whatsapp-bot",
   "description": "Elsa Wa-Bot project - Makes it easy and fun to use Whatsapp. World’s first UserBot made for WhatsApp.",
   "repository": "https://github.com/fazilvk786/whatsapp-bot",
-  "logo": "https://telegra.ph/file/65b8e02615d6a44c81159.jpg",
-  "keywords": ["whatsapp", "userbot", "Elsa", "Elsa Wa-Bot", "bot", "api", "elsa", "wabot", "wabot elsa", "whatsapp-bot"],
+  "logo": "https://telegra.ph/file/96ccad5945c18944c5f15.png",
+  "keywords": ["whatsapp", "userbot", "Elsa", "Elsa-Wa-Bot", "bot", "api", "elsa", "wabot", "wabot-elsa", "whatsapp-bot"],
   "stack": "container",
   "env": {
     "SESSION": {
