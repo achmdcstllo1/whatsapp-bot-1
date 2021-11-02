@@ -17,10 +17,7 @@ It is a WhatsApp bot and help you as a Assistant
     <img src="https://img.shields.io/github/repo-size/fazilvk786/whatsapp-bot?color=blue&label=Repo%20Size&style=plastic">
 
   </a>
-  <a href="httsp://github.com/fazilvk786/whatsapp-bot">
-    <img src="https://img.shields.io/codefactor/grade/github/fazilvk786/whatsapp-bot?color=purple&label=Code%20Quality&style=plastic">
-
-  </a>
+  
   <a href="https://github.com/fazilvk786/whatsapp-bot/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/fazilvk786/whatsapp-bot?color=purple&label=Lisance&style=plastic">
 
