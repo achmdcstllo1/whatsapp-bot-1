@@ -3,6 +3,7 @@ const { Client } = require('whatsapp-web.js');
 const express = require("express");
 const app = express();
 const qrcode = require('qrcode-terminal');
+const config = require("./config");
 
 const SESSION_FILE_PATH = './session.json';
 
@@ -12,7 +13,7 @@ if(fs.existsSync(SESSION_FILE_PATH)) {
 }
 
 const client = new Client({
-    session: sessionData,
+    session: sessionData || session: config.session,
     puppeteer: {
         executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
     }
