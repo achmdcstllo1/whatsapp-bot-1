@@ -20,7 +20,7 @@
               var updateavail = "*New update available for Bot!*\n\nChanges:\n```";
               commits['all'].map(
                 (commit) => {
-                    updateavail += '✨ [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                    updateavail += '✨ [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n\n';
                 }
             );
           
