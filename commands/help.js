@@ -41,7 +41,7 @@ const execute = async (client,msg,args) => {
     else {
         await client.sendMessage(msg.from, `No command with the name *${args[0]}*...`);
     }
-    client.sendMessage(msg.to, `*======Elsa Wa Bot======*\n\n\`\`\`\Join Our WhatsApp Support Group :\`\`\`\n *${link}${defaultXyz.j}* \n\`\`\`\Telegram Suppport Group: \n ${defaultXyz.t}${tele} \`\`\`\n\n*===========💖==========*`);
+    client.sendMessage(msg.to, `*======Elsa Wa Bot======*\n\n\`\`\`\Join Our WhatsApp Support Group :\`\`\`\n *${link}${defaultXyz.j}* \n\n\`\`\`\Telegram Suppport Group: \n ${defaultXyz.t}${tele} \`\`\`\n\n*===========💖==========*`);
     
 };
 
