@@ -10,7 +10,7 @@ module.exports = {
       fs.readFileSync(__dirname + "/session.json", { encoding: "utf8" })
   ), //if not using env vars create a file named session.json
   ai_chat_enabled: process.env.AI_CHAT_ENABLED || "false",
-  BRANCH: 'main',
+  BRANCH: 'master',
   HEROKU: {
     HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
     API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
