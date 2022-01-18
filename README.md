@@ -50,7 +50,7 @@ It is a WhatsApp bot and help you as a Assistant
 ## Setup
 ### Simple Methods 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fazil-vk/whatsapp-bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fazil-vk/whatsapp-bot/tree/master)
 
 ### or
 
