@@ -178,7 +178,7 @@ client.on("disconnected", (reason) => {
 
 // set up rate limiter: maximum of five requests per minute
 var RateLimit = require('express-rate-limit');
-var limiter = new RateLimit({
+var limiter =  RateLimit({
   windowMs: 1*60*1000, // 1 minute
   max: 100
 });
@@ -192,7 +192,7 @@ app.get("/", (req, res) => {
 app.use(
   "/public",
   express.static("public"),
-  require("serve-index")("public", { icons: true })
+  require("serve-index")("public", { icons: true }, limiter)
 );
 
 app.listen(process.env.PORT || 8080, () => {
