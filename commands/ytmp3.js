@@ -10,7 +10,7 @@ async function execute(client, msg, args) {
         url: url
     }
 
-    axios.request(options).then(function (response) {
+    axios.request(options).then(async function (response) {
         var data = response.data
     	var title = data.judul;
         var thumb = data.thumbnail;
