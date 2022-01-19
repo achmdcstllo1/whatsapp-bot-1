@@ -11,19 +11,20 @@ async function execute(client, msg, args) {
         url: url
     }
 
-    axios.request(options).then(function (response) {
+    axios.request(options)
+    .then(async function (response) {
         var data = response.data
     	var title = data.judul;
         var thumb = data.thumbnail;
-        var link = data.link;
-        msg.reply(`*${title}* \n\n*Thumb:* ${thumb}\n\n*YT Link:* ${link}\n\n*© Elsa Wa-Bot*`);
+        var link = data.url;
+        var message = `*${title}* \n\n*Thumb:* ${thumb}\n\n*YT Link:* ${link}\n\n*© Elsa Wa-Bot*`;
+        const media = await MessageMedia.fromUrl(thumb);
+        client.sendMessage(msg.from, media, {caption: message})
     }).catch(function (error) {
     	console.error(error);
         msg.reply("```" + "Result not Found" + "```");
         msg.to(error);
      });
-     const media = await MessageMedia.fromUrl('https://i.ytimg.com/vi/Y3DroBc6UaM/0.jpg');
-    client.sendMessage(msg.from, media, {caption: 'here\'s my media'})
 
 }
 
