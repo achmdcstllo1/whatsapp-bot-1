@@ -16,15 +16,14 @@ async function execute(client, msg, args) {
     	var title = data.judul;
         var thumb = data.thumbnail;
         var link = data.link;
-        const media = MessageMedia.fromUrl(thumb);
-        client.sendMessage(msg.from, media, {caption: 'here\'s my media'})
         msg.reply(`*${title}* \n\n*Thumb: *${thumb}\n\n*YT Link:* ${link}\n\n*© Elsa Wa-Bot*`);
-        client.MessageMedia(msg.channel, link);
     }).catch(function (error) {
     	console.error(error);
         msg.reply("```" + "Result not Found" + "```");
         msg.to(error);
      });
+     const media = await MessageMedia.fromUrl(thumb);
+    client.sendMessage(msg.from, media, {caption: 'here\'s my media'})
 
 }
 
