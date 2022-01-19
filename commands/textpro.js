@@ -17,12 +17,13 @@ const execute = async (client, msg, args) => {
             thiccysapi.textpro(textpr[i].url, splited[1])
             .then(async (data) => { 
               try { 
-                  console.log(data)
+                  console.log(data);
+                  const media = await MessageMedia.fromUrl(data);
+                  client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
               } catch(err) { 
                   console.log(err)
+                  msg.reply("```" + "Error occured" + "```");
               } 
-                const media = await MessageMedia.fromUrl(data);
-                client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
             });
         }
     }
