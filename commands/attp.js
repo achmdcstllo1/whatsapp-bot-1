@@ -23,9 +23,9 @@ async function execute(client, msg, args) {
 }
 
 module.exports = {
-    name: "instadl",
-    description: "Download instagram Posts. *NOT REELS, ONLY POSTS*",
-    command: "!instadl",
+    name: "!attp",
+    description: "Text to sticker",
+    command: "!attp",
     commandType: "plugin",
     isDependent: false,
     help: undefined,
