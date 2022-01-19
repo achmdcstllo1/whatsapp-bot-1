@@ -8,12 +8,24 @@ async function execute(client, msg, args) {
 
     var options = {
         method: 'GET',
-        url: url
+        url: url,
+        responseType: 'arraybuffer'
     }
 
     axios.request(options).then(async function (response) {
         var data = response.data
-        await client.sendMessage(msg.from, new MessageMedia(data.mimetype, data.data, data.filename), { sendMediaAsSticker: true, stickerAuthor: 'Fazil-vk', stickerName: 'Elsa wa-bot'});
+
+        const media = new MessageMedia(
+            data.mimetype, 
+            Buffer.data
+        );
+
+        await client.sendMessage(msg.from, media, {
+            sendMediaAsSticker: true, 
+            stickerAuthor: 'WWEBJS', 
+            stickerName: 'My Sticker'
+        });
+
     }).catch(function (error) {
     	console.error(error);
         msg.reply("```" + "Error occured" + "```");
