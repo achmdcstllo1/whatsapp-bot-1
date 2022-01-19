@@ -6,9 +6,6 @@
   */
  
 const { MessageMedia, Buttons } = require('whatsapp-web.js');
-const { defaultXyz } = require('../index.js');
-var tele = 'Zq6svi5bZj5mNTE9';
-var link = "https://chat.whatsapp.com/";
 const execute = async (client,msg,args) => {
     let commands =  client.commands;
     if(!args.length){

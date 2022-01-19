@@ -1,6 +1,9 @@
 
 var social_commands = `*🔍 !insta <username> :* _To grt information about given username!. send \`\`\`!insta [username]\`\`\`
-*🔍 !ytd <url> :* _To download youtube video. send \`\`\`!ytd [url]\`\`\``;
+*🔍 !ytd <url> :* _To download youtube video. send \`\`\`!ytd [url]\`\`\`
+*🔍 !ytmp3 <url> :* _To download youtube video as mp3. send \`\`\`!ytmp3 [url]\`\`\`
+*🔍 !play <url> :* _To search youtube video. send \`\`\`!play [url]\`\`\`
+*🔍 !instadl <url> :* _To download instagram video. send \`\`\`!instadl [url]\`\`\``;
 
 var sticker_cmds = `*🌟 !sticker :* _Generates sticker from image. use !help sticker for more info._` ;
 

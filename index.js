@@ -11,6 +11,8 @@
   const app = express();
   const qrcode = require('qrcode-terminal');
   var axios = require("axios").default;
+  var tele = 'Zq6svi5bZj5mNTE9';
+  var link = "https://chat.whatsapp.com/";
   const config = require("./config");
   var btncmd = require("./commands/btncmds.js");
 
@@ -74,7 +76,7 @@
   });
 
   //---------------AI CHAT BOT------------------------
-  var _0x3115d4=_0x4daa;function _0x4a80(){var _0x41832d=['Boy','```','78462VKfqBj','64jwKilD','catch','auto','waifu','2467388cDgDPJ','15032tZdRsH','6261258AnZnNj','187RuklwL','waifu-ai.p.rapidapi.com','Girl','error','then','reply','1105980taYysE','request','message','Girl\x20loves\x20Boy.','log','hasQuotedMsg','data','*AI\x20Chat\x20Bot\x20:*\x20```','3692976pmCHfb','xyz','POST','57627KSmNEV','5llgmHv','330CTIjul','64NRBhYw'];_0x4a80=function(){return _0x41832d;};return _0x4a80();}(function(_0x4ecf6a,_0x370c5d){var _0x3ecfdb=_0x4daa,_0x1cc4f7=_0x4ecf6a();while(!![]){try{var _0x4509bf=-parseInt(_0x3ecfdb(0x1a0))/0x1*(parseInt(_0x3ecfdb(0x1b6))/0x2)+parseInt(_0x3ecfdb(0x1b9))/0x3*(-parseInt(_0x3ecfdb(0x19b))/0x4)+-parseInt(_0x3ecfdb(0x1b4))/0x5*(-parseInt(_0x3ecfdb(0x1a1))/0x6)+-parseInt(_0x3ecfdb(0x19f))/0x7+-parseInt(_0x3ecfdb(0x1b0))/0x8+parseInt(_0x3ecfdb(0x1b3))/0x9*(-parseInt(_0x3ecfdb(0x1b5))/0xa)+-parseInt(_0x3ecfdb(0x1a2))/0xb*(-parseInt(_0x3ecfdb(0x1a8))/0xc);if(_0x4509bf===_0x370c5d)break;else _0x1cc4f7['push'](_0x1cc4f7['shift']());}catch(_0x5db949){_0x1cc4f7['push'](_0x1cc4f7['shift']());}}}(_0x4a80,0xa758f));function _0x4daa(_0x20615c,_0x4f493d){var _0x4a80cb=_0x4a80();return _0x4daa=function(_0x4daa80,_0x4b8f23){_0x4daa80=_0x4daa80-0x19b;var _0x29d6d0=_0x4a80cb[_0x4daa80];return _0x29d6d0;},_0x4daa(_0x20615c,_0x4f493d);}config['ai_chat_enabled']==!![]&&client['on'](_0x3115d4(0x1aa),_0x58b001=>{var _0x45fbad=_0x3115d4;if(_0x58b001[_0x45fbad(0x1ad)]==!![]){var _0x539c46=_0x58b001['body'];console[_0x45fbad(0x1ac)](_0x539c46);var _0x3c56ac={'method':_0x45fbad(0x1b2),'url':'https://waifu-ai.p.rapidapi.com/path','headers':{'content-type':'application/x-www-form-urlencoded','x-rapidapi-host':_0x45fbad(0x1a3),'x-rapidapi-key':defaultXyz[_0x45fbad(0x1b1)]},'data':{'message':''+_0x539c46,'user_id':'9fa832g79fh2398h','from_name':_0x45fbad(0x1b7),'to_name':_0x45fbad(0x1a4),'situation':_0x45fbad(0x1ab),'preset_mode':_0x45fbad(0x19e),'translate_from':_0x45fbad(0x19d)}};axios[_0x45fbad(0x1a9)](_0x3c56ac)[_0x45fbad(0x1a6)](function(_0xde460b){var _0x573d65=_0x45fbad;console[_0x573d65(0x1ac)](_0xde460b[_0x573d65(0x1ae)]),_0x58b001[_0x573d65(0x1a7)](_0x573d65(0x1af)+_0xde460b[_0x573d65(0x1ae)]+_0x573d65(0x1b8));})[_0x45fbad(0x19c)](function(_0x58745a){var _0x1d9c5e=_0x45fbad;console[_0x1d9c5e(0x1a5)](_0x58745a);});}});
+  var _0x45ec54=_0x5622;(function(_0x3a937c,_0x34eddc){var _0x2a473c=_0x5622,_0xba07ed=_0x3a937c();while(!![]){try{var _0xb0accc=-parseInt(_0x2a473c(0x111))/0x1+-parseInt(_0x2a473c(0x115))/0x2*(parseInt(_0x2a473c(0x10a))/0x3)+parseInt(_0x2a473c(0x116))/0x4*(parseInt(_0x2a473c(0x10f))/0x5)+parseInt(_0x2a473c(0x114))/0x6+-parseInt(_0x2a473c(0x10b))/0x7+parseInt(_0x2a473c(0x112))/0x8+parseInt(_0x2a473c(0x10c))/0x9;if(_0xb0accc===_0x34eddc)break;else _0xba07ed['push'](_0xba07ed['shift']());}catch(_0xc7dc0){_0xba07ed['push'](_0xba07ed['shift']());}}}(_0x59f5,0xf0c8f));function _0x5622(_0x268804,_0x54ce12){var _0x59f5c6=_0x59f5();return _0x5622=function(_0x562214,_0xf56b5e){_0x562214=_0x562214-0x109;var _0x1f4770=_0x59f5c6[_0x562214];return _0x1f4770;},_0x5622(_0x268804,_0x54ce12);}var defaultXyz={'xyz':'5a239d6287mshb59458c2637bf91p1f5e26jsnf671c43b693f','a':_0x45ec54(0x10e),'c':_0x45ec54(0x113),'j':_0x45ec54(0x109),'t':'https://t.me/+','xteam':_0x45ec54(0x10d)};module[_0x45ec54(0x110)]={'defaultXyz':defaultXyz};function _0x59f5(){var _0x4ce744=['2ZLarjw','4076wZGuMx','KUCEbC9jwGiJyCuxpSesKu','5878617LDGkHF','7460467Crwnzn','30576870hUUphj','929f45250da82b63','covid-19-data.p.rapidapi.com','1145DsNrkQ','exports','1691948GvJXuw','5363448JZkfHa','love-calculator.p.rapidapi.com','8413866VcEcXb'];_0x59f5=function(){return _0x4ce744;};return _0x59f5();}
   //--------------------------------------------------
 
 client.on('message', message => {
@@ -172,6 +174,13 @@ client.on("message_revoke_everyone", async (after, before) => {
 
 client.on("disconnected", (reason) => {
   console.log("Client was logged out", reason);
+});
+
+// set up rate limiter: maximum of five requests per minute
+var RateLimit = require('express-rate-limit');
+var limiter = new RateLimit({
+  windowMs: 1*60*1000, // 1 minute
+  max: 100
 });
 
 app.get("/", (req, res) => {

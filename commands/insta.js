@@ -10,6 +10,7 @@ const instagram = require("user-instagram-profile");
 const execute = async (client, msg, args) => {
     instagram(`https://www.instagram.com/${args}`)
     .then(data => {
+      console.log(data);
       if(data.isPrivate == true) {
         var status = "Private"
       }else{
@@ -26,7 +27,7 @@ const execute = async (client, msg, args) => {
       msg.reply(`${info}\n\n\n*© Elsa Wa-Bot*`);
     })
     .catch(e => {
-      console.error(data)
+      console.error(e)
       msg.reply("Account not found!");
     })
 }
