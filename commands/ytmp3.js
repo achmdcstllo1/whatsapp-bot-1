@@ -1,5 +1,6 @@
 const { defaultXyz } = require('../index.js');
 var axios = require("axios").default;
+const { MessageMedia } = require('whatsapp-web.js')
 
 async function execute(client, msg, args) {
 
