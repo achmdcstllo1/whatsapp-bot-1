@@ -24,6 +24,7 @@
     "Elsa Wa-Bot"
   ],
   "dependencies": {
+    "@phaticusthiccy/open-apis": "^1.1.0",
     "axios": "^0.24.0",
     "child_process": "^1.0.2",
     "express": "^4.17.1",

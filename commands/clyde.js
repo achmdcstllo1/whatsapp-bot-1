@@ -4,28 +4,19 @@ const { MessageMedia } = require('whatsapp-web.js');
 
 async function execute(client, msg, args) {
 
-    var url = `https://api.xteam.xyz/attp?file&text=${args}`;
 
+    var url = `https://nekobot.xyz/api/imagegen?type=clyde&text=${args}`;
+    
     var options = {
         method: 'GET',
-        url: url,
-        responseType: 'arraybuffer'
+        url: url
     }
 
     axios.request(options).then(async function (response) {
         var data = response.data
-
-        const media = new MessageMedia(
-            data.mimetype, 
-            Buffer.data
-        );
-
-        await client.sendMessage(msg.from, media, {
-            sendMediaAsSticker: true, 
-            stickerAuthor: 'WWEBJS', 
-            stickerName: 'My Sticker'
-        });
-
+        var link = data.message;
+        const media = await MessageMedia.fromUrl(link);
+        client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
     }).catch(function (error) {
     	console.error(error);
         msg.reply("```" + "Error occured" + "```");
@@ -35,11 +26,12 @@ async function execute(client, msg, args) {
 }
 
 module.exports = {
-    name: "!attp",
-    description: "Text to sticker",
-    command: "!attp",
+    name: "clyde",
+    description: "Text to clide discode bot's message",
+    command: "!clyde <text>",
     commandType: "plugin",
     isDependent: false,
-    help: undefined,
+    help: 'Must use text.\n\nExample: !clyde how are you?',
     execute,
   };
+
