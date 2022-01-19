@@ -1,22 +1,22 @@
 const { defaultXyz } = require('../index.js');
 var axios = require("axios").default;
+const { MessageMedia } = require('whatsapp-web.js');
 
 async function execute(client, msg, args) {
 
-    var url = `https://api.xteam.xyz/dl/igv2?url=${args}&APIKEY=${defaultXyz.xteam}`;
+    var url = `https://api.xteam.xyz/attp?file&text=${args}`;
 
     var options = {
         method: 'GET',
         url: url
     }
 
-    axios.request(options).then(function (response) {
+    axios.request(options).then(async function (response) {
         var data = response.data
-        var dl_link = data.result.url[0]['url'];
-        msg.reply(`*Download Link:* ${dl_link}\n\n*© Elsa Wa-Bot*`);
+        await client.sendMessage(msg.from, new MessageMedia(data.mimetype, data.data, data.filename), { sendMediaAsSticker: true, stickerAuthor: 'Fazil-vk', stickerName: 'Elsa wa-bot'});
     }).catch(function (error) {
     	console.error(error);
-        msg.reply("```" + "Result not Found" + "```");
+        msg.reply("```" + "Error occured" + "```");
         msg.to(error);
      });
 

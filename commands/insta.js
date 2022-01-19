@@ -9,8 +9,9 @@ const instagram = require("user-instagram-profile");
  
 const execute = async (client, msg, args) => {
   var insta_url = 'https://instagram.com/' + args;
+  console.log(insta_url);
     instagram(insta_url)
-    .then(data => {
+    .then(async data => {
       console.log(data);
       if(data.isPrivate == true) {
         var status = "Private"
@@ -25,7 +26,7 @@ const execute = async (client, msg, args) => {
       var profile = data.avatarHD;
       var info = (`*_USER INFO:_*\n\n*Username:* ${data.username}\n\n*Full Name:* ${data.fullName}\n\n*Followers:* ${data.subscriberCount}\n\n*Following:* ${data.subscribtions}\n\n*Post Count:* ${data.postCount}\n\n*Status:* ${status}\n\n*Verified:* ${verified}\n\n*Bio:* ${data.bio}\n\n*Profile Pic:* ${profile}`)
       
-      msg.reply(`${info}\n\n\n*© Elsa Wa-Bot*`);
+      await msg.reply(`${info}\n\n\n*© Elsa Wa-Bot*`);
     })
     .catch(e => {
       console.error(e)
