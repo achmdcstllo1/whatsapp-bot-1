@@ -66,7 +66,7 @@
     console.log('Client is ready!');
     let info = client.info;
     let num = info['me']['user']+'@s.whatsapp.net';
-    client.sendMessage(num,`*======Elsa Wa Bot======*\n\n*🎉 Bot started working*\`\`\`\Join Our WhatsApp Support Group :\`\`\`\n *${link}${defaultXyz.j}* \n\n\`\`\`\Telegram Suppport Group: \n ${defaultXyz.t}${tele} \`\`\`\n\n*===========💖==========*`)
+    client.sendMessage(num,`*======Elsa Wa Bot======*\n\n*🎉 Bot started working*\n\n\`\`\`\Join Our WhatsApp Support Group :\`\`\`\n *${link}${defaultXyz.j}* \n\n\`\`\`\Telegram Suppport Group: \n ${defaultXyz.t}${tele} \`\`\`\n\n*===========💖==========*`)
   });
   
   client.initialize();
