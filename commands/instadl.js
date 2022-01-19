@@ -12,9 +12,8 @@ async function execute(client, msg, args) {
 
     axios.request(options).then(function (response) {
         var data = response.data
-        var thumb = data.result.thumb;
         var dl_link = data.result.url[0]['url'];
-        msg.reply(`*${title}* \n\n*Thumb: *${thumb}\n\n*Download Link:* ${link}\n\n*© Elsa Wa-Bot*`);
+        msg.reply(`*Download Link:* ${dl_link}\n\n*© Elsa Wa-Bot*`);
     }).catch(function (error) {
     	console.error(error);
         msg.reply("```" + "Result not Found" + "```");

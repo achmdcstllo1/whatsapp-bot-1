@@ -1,6 +1,6 @@
 const { defaultXyz } = require('../index.js');
 var axios = require("axios").default;
-const { MessageMedia } = require('whatsapp-web.js')
+const { MessageMedia } = require('whatsapp-web.js');
 
 async function execute(client, msg, args) {
 
@@ -17,9 +17,9 @@ async function execute(client, msg, args) {
     	var title = data.judul;
         var thumb = data.thumbnail;
         var link = data.url;
-        var message = `*${title}* \n\n*Thumb:* ${thumb}\n\n*YT Link:* ${link}\n\n*© Elsa Wa-Bot*`;
+        var message = `*${title}* \n\n*YT Link:* ${link}\n\n*© Elsa Wa-Bot*`;
         const media = await MessageMedia.fromUrl(thumb);
-        client.sendMessage(msg.from, media, {caption: message})
+        client.sendMessage(msg.from, media, {caption: message});
     }).catch(function (error) {
     	console.error(error);
         msg.reply("```" + "Result not Found" + "```");

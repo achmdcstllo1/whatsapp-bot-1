@@ -10,6 +10,7 @@ function splitStr(str, separator) {
     return string;
 }
 const { defaultXyz } = require('../index.js');
+const { MessageMedia } = require('whatsapp-web.js');
 
 async function execute(client, msg, args) {
 
@@ -36,7 +37,7 @@ async function execute(client, msg, args) {
         }
     };
 
-    axios.request(options).then(function (response) {
+    axios.request(options).then(async function (response) {
         var data = response.data;
 
         var title = data.title;
@@ -58,9 +59,9 @@ async function execute(client, msg, args) {
         var medium_url = medium[0];
 
 
-        var message = `*✨ Title : ${title}*\n*🎬 Thumb :* ${thumb}\n*⏳ Length :* ${length}\n*🎆 Channel :* ${channel}\n*👁 Views :* ${views}\n\n*👻 Low : ${low_name}*\n_🗜 size :_ ${low_size}\n_📥 Download :_ ${low_url}\n\n*🔮 Medium :* ${medium_name}\n_🗜 Size :_ ${medium_size}\n_📥 Download :_ ${medium_url}`;
-
-        msg.reply(`${message}*\n\n© Elsa Wa-Bot*`);
+        var message = `*✨ Title : ${title}*\n⏳ Length :* ${length}\n*🎆 Channel :* ${channel}\n*👁 Views :* ${views}\n\n*👻 Low : ${low_name}*\n_🗜 size :_ ${low_size}\n_📥 Download :_ ${low_url}\n\n*🔮 Medium :* ${medium_name}\n_🗜 Size :_ ${medium_size}\n_📥 Download :_ ${medium_url}\n\n*© Elsa Wa-Bot*`;
+        const media = await MessageMedia.fromUrl(thumb);
+        client.sendMessage(msg.from, media, {caption: message});
         
     }).catch(function (error) {
         console.error(error);

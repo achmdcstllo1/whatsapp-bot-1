@@ -8,7 +8,8 @@
 const instagram = require("user-instagram-profile");
  
 const execute = async (client, msg, args) => {
-    instagram(`https://www.instagram.com/${args}`)
+  var insta_url = 'https://instagram.com/' + args;
+    instagram(insta_url)
     .then(data => {
       console.log(data);
       if(data.isPrivate == true) {
