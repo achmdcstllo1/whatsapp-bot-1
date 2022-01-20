@@ -12,7 +12,7 @@ const execute = async (client, msg, args) => {
 
     var splited = splitStr(args, '|');
 
-    for (var i = 0; i <= textpr.length; i++) {
+    for (var i = 0; i < textpr.length; i++) {
         if (splited[0] == textpr[i].name) {
             thiccysapi.textpro(textpr[i].url, splited[1])
             .then(async (data) => { 

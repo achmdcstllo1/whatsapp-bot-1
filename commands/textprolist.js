@@ -1,7 +1,7 @@
 const textpr = require('../textpro/textpros.json');
 const execute = async (client, msg, args) => {
     var list = [];
-    for(var i = 0; i <= textpr.length; i++) {
+    for(var i = 0; i < textpr.length; i++) {
         list.push(textpr[i].name + " - " + textpr[i].description + "\n\n");
     }
     await msg.reply("*Available textpros:*\n\n" + list + "\n\n*©️ Elsa Wa-Bot*");
