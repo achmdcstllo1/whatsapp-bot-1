@@ -12,6 +12,7 @@ const execute = async (client, msg, args) => {
     var str = `${args}`;
     var separator = "|";
     var splitted = splitStr(str, separator);
+    console.log(splitted);
 
     for (var i = 0; i < textpr.length; i++) {
         if (splitted[0] == textpr[i].name) {
