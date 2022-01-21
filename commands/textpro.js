@@ -20,7 +20,7 @@ const execute = async (client, msg, args) => {
             .then((data) => { 
               try { 
                   console.log(data);
-                  const media = await MessageMedia.fromUrl(data);
+                  const media = MessageMedia.fromUrl(data);
                   client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
               } catch(err) { 
                   console.log(err)
