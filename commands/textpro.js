@@ -13,17 +13,23 @@ const execute = async (client, msg, args) => {
     var separator = "|";
     var splitted = splitStr(str, separator);
     console.log(splitted);
-
+    var link = ''
     for (var i = 0; i < textpr.length; i++) {
         if (splitted[0] == textpr[i].name) {
             thiccysapi.textpro(textpr[i].url, splitted[1])
             .then(async function (data) { 
-                console.log(data);
-                const media = await MessageMedia.fromUrl(data);
-                client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
+              try { 
+                  console.log(data);
+                  link = data
+              } catch(err) { 
+                  console.log(err)
+                  msg.reply("```" + "Error occured" + "```");
+              } 
             });
         }
     }
+    const media = await MessageMedia.fromUrl(data);
+    client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
     
 }
 
