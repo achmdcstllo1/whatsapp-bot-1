@@ -18,14 +18,9 @@ const execute = async (client, msg, args) => {
         if (splitted[0] == textpr[i].name) {
             thiccysapi.textpro(textpr[i].url, splitted[1])
             .then(async function (data) { 
-              try { 
-                  console.log(data);
-                  const media = await MessageMedia.fromUrl('https://textpro.me/images/user_image/2022/01/61ea44bad2e39.jpg');
-                  client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
-              } catch(err) { 
-                  console.log(err)
-                  msg.reply("```" + "Error occured" + "```");
-              } 
+                console.log(data);
+                const media = await MessageMedia.fromUrl(data);
+                client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
             });
         }
     }
