@@ -183,6 +183,8 @@ var limiter =  RateLimit({
   max: 100
 });
 
+app.use(limiter);
+
 app.get("/", (req, res) => {
   res.sendFile(
     'server/index.html', { root: '.' }
@@ -192,7 +194,7 @@ app.get("/", (req, res) => {
 app.use(
   "/public",
   express.static("public"),
-  require("serve-index")("public", { icons: true }, limiter)
+  require("serve-index")("public", { icons: true })
 );
 
 app.listen(process.env.PORT || 8080, () => {

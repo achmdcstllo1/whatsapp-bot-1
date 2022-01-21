@@ -3,9 +3,9 @@ const execute = async (client, msg, args) => {
     var list = [];
     for(var i = 0; i < textpr.length; i++) {
         var num = textpr[i].name + " - " + textpr[i].description;
-        list.push(num.replace(/ *, */g, '\n\n'));
+        list.push(num);
     }
-    await msg.reply("*Available textpros:*\n\n" + list + "\n\n*©️ Elsa Wa-Bot*");
+    await msg.reply("*Available textpros:*\n\n" + list.replace(/ *, */g, '\n\n') + "\n\n*©️ Elsa Wa-Bot*");
 
 }
 
