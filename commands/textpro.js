@@ -22,13 +22,13 @@ const execute = async (client, msg, args) => {
                   console.log(data);
                   const media = await MessageMedia.fromUrl('https://textpro.me/images/user_image/2022/01/61ea44bad2e39.jpg');
                   client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
-                  break;
               } catch(err) { 
                   console.log(err)
                   msg.reply("```" + "Error occured" + "```");
               } 
             });
         }
+        break;
     }
     
 }
