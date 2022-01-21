@@ -28,7 +28,6 @@ const execute = async (client, msg, args) => {
               } 
             });
         }
-        break;
     }
     
 }
