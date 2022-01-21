@@ -4,8 +4,8 @@ const { MessageMedia } = require('whatsapp-web.js');
 
 async function execute(client, msg, args) {
 
-
-    var url = `https://nekobot.xyz/api/imagegen?type=kannagen&text=${args.replace(/,/g, ' ')}`;
+    var texts = args.toString().replace(/ *, */g, ' ');
+    var url = `https://nekobot.xyz/api/imagegen?type=kannagen&text=${texts}`;
     
     var options = {
         method: 'GET',
