@@ -1,3 +1,10 @@
+ /*
+  =====================================================
+  ©️ Copyright by Fazil vk : github.com/Fazilvk786
+  Do not remove this from the code.
+  =====================================================
+  */
+ 
 const thiccysapi = require('@phaticusthiccy/open-apis');
 const textpr = require('../textpro/textpros.json');
 const { MessageMedia } = require('whatsapp-web.js');
@@ -28,7 +35,7 @@ const execute = async (client, msg, args) => {
             });
         }
     }
-    const media = await MessageMedia.fromUrl(data);
+    const media = await MessageMedia.fromUrl(link);
     client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
     
 }

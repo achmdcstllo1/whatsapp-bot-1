@@ -1,4 +1,4 @@
-const execute = async (client, msg) => {
+const execute = async (msg) => {
     msg.reply("```" + "Hi Bro, I am alive." + "```");
   };
   

@@ -1,9 +1,16 @@
-const { defaultXyz } = require('../index.js');
+/*
+ =====================================================
+ ©️ Copyright by Fazil vk : github.com/Fazilvk786
+ Do not remove this from the code.
+ =====================================================
+ */
+
 var axios = require("axios").default;
+const Config = require('../config');
 
-async function execute(client, msg, args) {
+async function execute(msg, args) {
 
-    var url = `https://api.xteam.xyz/shorturl/bitly?url=${args}&APIKEY=${defaultXyz.xteam}`;
+    var url = `https://api.xteam.xyz/shorturl/bitly?url=${args}&APIKEY=${Config.XTEAM_API}`;
 
     var options = {
         method: 'GET',
@@ -15,10 +22,10 @@ async function execute(client, msg, args) {
         var s_link = data.result.link;
         msg.reply(`*Shorted Link:* ${s_link}\n\n*© Elsa Wa-Bot*`);
     }).catch(function (error) {
-    	console.error(error);
+        console.error(error);
         msg.reply("```" + "Result not Found" + "```");
         msg.to(error);
-     });
+    });
 
 }
 
@@ -30,4 +37,4 @@ module.exports = {
     isDependent: false,
     help: undefined,
     execute,
-  };
+};

@@ -1,10 +1,19 @@
-const { defaultXyz } = require('../index.js');
+ /*
+  =====================================================
+  ©️ Copyright by Fazil vk : github.com/Fazilvk786
+  Do not remove this from the code.
+  =====================================================
+  */
+
+const Config = require('../config');
 var axios = require("axios").default;
 const { MessageMedia } = require('whatsapp-web.js');
 
 async function execute(client, msg, args) {
+    
+    var flag = 0;
 
-    var url = `https://api.xteam.xyz/dl/ytmp3?url=${args}&APIKEY=${defaultXyz.xteam}`;
+    var url = `https://api.xteam.xyz/dl/ytmp3?url=${args}&APIKEY=${Config.XTEAM_API}`;
 
     var options = {
         method: 'GET',
@@ -20,6 +29,12 @@ async function execute(client, msg, args) {
         var message = `*${title}* \n\n*YT Link:* ${link}\n\n*© Elsa Wa-Bot*`;
         const media = await MessageMedia.fromUrl(thumb);
         client.sendMessage(msg.from, media, {caption: message});
+        try{
+            const media = await MessageMedia.fromUrl(link);
+            client.sendMessage(msg.from, media, {caption: message});
+        } catch{
+            flag = 1;
+        }
     }).catch(function (error) {
     	console.error(error);
         msg.reply("```" + "Result not Found" + "```");

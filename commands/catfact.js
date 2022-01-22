@@ -7,7 +7,7 @@
  
 var axios = require("axios").default;
 
-const execute = async (client, msg) => {
+const execute = async (msg) => {
     var options = {
         method: 'GET',
         url: 'https://catfact.ninja/fact/'

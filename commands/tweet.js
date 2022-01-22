@@ -1,3 +1,10 @@
+ /*
+  =====================================================
+  ©️ Copyright by Fazil vk : github.com/Fazilvk786
+  Do not remove this from the code.
+  =====================================================
+  */
+ 
 var axios = require("axios").default;
 const { MessageMedia } = require('whatsapp-web.js');
 

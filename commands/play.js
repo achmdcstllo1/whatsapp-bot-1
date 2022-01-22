@@ -1,10 +1,17 @@
-const { defaultXyz } = require('../index.js');
+ /*
+  =====================================================
+  ©️ Copyright by Fazil vk : github.com/Fazilvk786
+  Do not remove this from the code.
+  =====================================================
+  */
+ 
+const Config = require('../config');
 var axios = require("axios").default;
 const { MessageMedia } = require('whatsapp-web.js');
 
 async function execute(client, msg, args) {
 
-    var url = `https://api.xteam.xyz/dl/play?lagu=${args}&APIKEY=${defaultXyz.xteam}`;
+    var url = `https://api.xteam.xyz/dl/play?lagu=${args}&APIKEY=${Config.XTEAM_API}`;
 
     var options = {
         method: 'GET',

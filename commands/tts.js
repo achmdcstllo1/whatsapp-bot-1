@@ -14,7 +14,7 @@ function splitStr(str, separator) {
     return string;
 }
 
-const execute = async (client, msg, args) => {
+const execute = async (msg, args) => {
 
     var str = `${args}`;
 

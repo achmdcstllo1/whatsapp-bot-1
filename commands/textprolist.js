@@ -1,5 +1,12 @@
+ /*
+  =====================================================
+  ©️ Copyright by Fazil vk : github.com/Fazilvk786
+  Do not remove this from the code.
+  =====================================================
+  */
+
 const textpr = require('../textpro/textpros.json');
-const execute = async (client, msg, args) => {
+const execute = async (msg) => {
     var list = [];
     for(var i = 0; i < textpr.length; i++) {
         var num = textpr[i].name + " - " + textpr[i].description;

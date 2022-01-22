@@ -14,7 +14,8 @@
   "env": {
     "SESSION": {
       "description": "Session ID. Get it by running server.js",
-      "value": ""
+      "value": "",
+      "required": true
     },
     "AI_CHAT_ENABLED": {
       "description": "If you ant enable AI chatbot then set value 'true'",
@@ -31,6 +32,10 @@
     },
     "HEROKU_APP_NAME": {
       "description": "Heroku APP Name. Exactly same the above you given.",
+      "required": true
+    },
+    "XTEAM_API": {
+      "description": "X-Team API. More details : ",
       "required": true
     }
   }

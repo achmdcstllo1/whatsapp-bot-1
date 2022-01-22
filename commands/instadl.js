@@ -1,9 +1,16 @@
-const { defaultXyz } = require('../index.js');
+ /*
+  =====================================================
+  ©️ Copyright by Fazil vk : github.com/Fazilvk786
+  Do not remove this from the code.
+  =====================================================
+  */
+
+const Config = require('../config');
 var axios = require("axios").default;
 
-async function execute(client, msg, args) {
+async function execute(msg, args) {
 
-    var url = `https://api.xteam.xyz/dl/igv2?url=${args}&APIKEY=${defaultXyz.xteam}`;
+    var url = `https://api.xteam.xyz/dl/igv2?url=${args}&APIKEY=${Config.XTEAM_API}`;
 
     var options = {
         method: 'GET',
