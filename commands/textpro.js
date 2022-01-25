@@ -28,22 +28,14 @@ const execute = async (client, msg, args) => {
               try { 
                   console.log(data);
                   link = data
-                  try{
-                    const media = await MessageMedia.fromUrl(link);
-                    client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
-                  }
-                  catch(err){
-                    console.log(err);
-                    await msg.reply('*Image link:*\n' + link + '\n\n*©️ Elsa Wa-Bot*');
-                  }
+                  const media = await MessageMedia.fromUrl(link);
+                  client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
               } catch(err) { 
                   console.log(err)
                   msg.reply("```" + "Error occured" + "```");
+                  throw err;
               } 
-            });
-        }
-        else{
-            msg.reply("```Please check your Textpro name.```");
+            })().catch( e => { console.error(e) });
         }
     }
     
