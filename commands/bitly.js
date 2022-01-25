@@ -8,7 +8,7 @@
 var axios = require("axios").default;
 const Config = require('../config');
 
-async function execute(msg, args) {
+async function execute(client, msg, args) {
 
     var url = `https://api.xteam.xyz/shorturl/bitly?url=${args}&APIKEY=${Config.XTEAM_API}`;
 
@@ -30,7 +30,7 @@ async function execute(msg, args) {
 }
 
 module.exports = {
-    name: "ibitly",
+    name: "bitly",
     description: "To short a link.",
     command: "!bitly <url>",
     commandType: "plugin",

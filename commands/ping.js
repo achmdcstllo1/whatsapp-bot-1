@@ -8,7 +8,7 @@
 const NetworkSpeed = require('network-speed');  // ES5
 const testNetworkSpeed = new NetworkSpeed();
 
-const execute = async (msg) => {
+const execute = async (client, msg) => {
     
     let dl_speed = getNetworkSpeed();
 

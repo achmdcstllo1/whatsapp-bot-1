@@ -20,7 +20,8 @@ async function execute(client, msg, args) {
     var splitted = splitStr(str, separator);
 
     var texts = splitted[1].toString().replace(/ *, */g, ' ');
-    var url = `https://nekobot.xyz/api/imagegen?type=tweet&username=${splitted[0].replace(/ /g, '_')}&text=${texts}`;
+    var uname = splitted[0].replace(/[,\s]+|[,\s]+/g, '').trim();
+    var url = `https://nekobot.xyz/api/imagegen?type=tweet&username=${uname.replace(/ /g, '_')}&text=${texts}`;
     
     var options = {
         method: 'GET',

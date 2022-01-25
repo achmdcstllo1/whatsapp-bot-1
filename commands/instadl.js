@@ -8,7 +8,7 @@
 const Config = require('../config');
 var axios = require("axios").default;
 
-async function execute(msg, args) {
+async function execute(client, msg, args) {
 
     var url = `https://api.xteam.xyz/dl/igv2?url=${args}&APIKEY=${Config.XTEAM_API}`;
 

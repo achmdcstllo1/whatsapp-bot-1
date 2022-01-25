@@ -32,7 +32,7 @@ const execute = async (msg, args) => {
         const saveFile = async () => {
             try {
                 const buffer = await tts.synthesize({
-                    text: `${text[0]}`,
+                    text: `${text[0].toString().replace(/ *, */g, ' ')}`,
                     voice: `${last}`,
                     slow: false
                 });
@@ -52,7 +52,7 @@ const execute = async (msg, args) => {
         const saveFile = async () => {
             try {
                 const buffer = await tts.synthesize({
-                    text: `${text[0]}`,
+                    text: `${text[0].toString().replace(/ *, */g, ' ')}`,
                     voice: 'en',
                     slow: false
                 });

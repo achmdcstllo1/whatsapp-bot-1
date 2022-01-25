@@ -59,7 +59,7 @@ async function execute(client, msg, args) {
         var medium_url = medium[0];
 
 
-        var message = `*✨ Title : ${title}*\n⏳ Length :* ${length}\n*🎆 Channel :* ${channel}\n*👁 Views :* ${views}\n\n*👻 Low : ${low_name}*\n_🗜 size :_ ${low_size}\n_📥 Download :_ ${low_url}\n\n*🔮 Medium :* ${medium_name}\n_🗜 Size :_ ${medium_size}\n_📥 Download :_ ${medium_url}\n\n*© Elsa Wa-Bot*`;
+        var message = `*✨ Title : ${title}*\n*⏳ Length :* ${length}\n*🎆 Channel :* ${channel}\n*👁 Views :* ${views}\n\n*👻 Low : ${low_name}*\n_🗜 size :_ ${low_size}\n_📥 Download :_ ${low_url}\n\n*🔮 Medium :* ${medium_name}\n_🗜 Size :_ ${medium_size}\n_📥 Download :_ ${medium_url}\n\n*© Elsa Wa-Bot*`;
         const media = await MessageMedia.fromUrl(thumb);
         client.sendMessage(msg.from, media, {caption: message});
         
