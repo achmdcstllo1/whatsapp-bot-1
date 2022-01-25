@@ -20,7 +20,7 @@ const execute = async (client, msg, args) => {
     var separator = "|";
     var splitted = splitStr(str, separator);
     console.log(splitted);
-    var link = ''
+
     for (var i = 0; i < textpr.length; i++) {
         if (splitted[0] == textpr[i].name) {
             thiccysapi.textpro(textpr[i].url, splitted[1])
@@ -28,15 +28,24 @@ const execute = async (client, msg, args) => {
               try { 
                   console.log(data);
                   link = data
+                  try{
+                    const media = await MessageMedia.fromUrl(link);
+                    client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
+                  }
+                  catch(err){
+                    console.log(err);
+                    await msg.reply('*Image link:*\n' + link + '\n\n*©️ Elsa Wa-Bot*');
+                  }
               } catch(err) { 
                   console.log(err)
                   msg.reply("```" + "Error occured" + "```");
               } 
             });
         }
+        else{
+            msg.reply("```Please check your Textpro name.```");
+        }
     }
-    const media = await MessageMedia.fromUrl(link);
-    client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
     
 }
 

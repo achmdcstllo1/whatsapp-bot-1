@@ -6,7 +6,7 @@
   */
 
 const textpr = require('../textpro/textpros.json');
-const execute = async (msg) => {
+const execute = async (client, msg) => {
     var list = [];
     for(var i = 0; i < textpr.length; i++) {
         var num = textpr[i].name + " - " + textpr[i].description;

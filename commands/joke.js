@@ -7,7 +7,7 @@
  
 var axios = require("axios").default;
 
-const execute = async (msg) => {
+const execute = async (client, msg) => {
 
   var options = {
   method: 'GET',

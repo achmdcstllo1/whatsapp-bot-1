@@ -25,7 +25,7 @@ async function execute(client, msg, args) {
             var link = data.result.url[i]['url'];
             res.push(`${subname}: ${link} + \n\n`);
         }
-        msg.reply(`**Download Link:* ${res}\n\n*© Elsa Wa-Bot*`);
+        msg.reply(`*Download Links:*\n${res.toString().replace(/ *, */g, '')}\n\n*© Elsa Wa-Bot*`);
     }).catch(function (error) {
     	console.error(error);
         msg.reply("```" + "Result not Found" + "```");
