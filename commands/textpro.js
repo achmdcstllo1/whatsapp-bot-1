@@ -31,11 +31,11 @@ const execute = async (client, msg, args) => {
                   const media = await MessageMedia.fromUrl(link);
                   client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
               } catch(err) { 
-                  console.log(err)
+                  console.error(err)
                   msg.reply("```" + "Error occured" + "```");
                   throw err;
               } 
-            })().catch( e => { console.error(e) });
+            }).catch( e => { console.error(e) });
         }
     }
     
