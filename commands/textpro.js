@@ -7,6 +7,9 @@
  
 const thiccysapi = require('@phaticusthiccy/open-apis');
 const textpr = require('../textpro/textpros.json');
+const axios = require('axios');
+const { MessageMedia } = require('whatsapp-web.js');
+
 
 function splitStr(str, separator) {
     var string = str.split(separator);
@@ -26,7 +29,16 @@ const execute = async (client, msg, args) => {
             .then(async (data) => { 
               try { 
                   console.log(data);
+                  axios.get(data, {responseType: "stream"} )  
+                  .then(response => {  
+                  // Saving file to working directory  
+                      response.data.pipe(fs.createWriteStream("../temp/textpro.jpg"));  
+                  })  
+                      .catch(error => {  
+                      console.log(error);  
+                  });  
                   msg.reply(data + '\n\n©️ Elsa wa bot').catch(err => console.log(err));
+                  await client.sendMessage(msg.from, MessageMedia.fromFilePath("../temp/textpro.jpg"), {caption: '*© Elsa Wa-Bot*'});
               } catch(err) { 
                   console.error(err)
                   msg.reply("```" + "Error occured" + "```");
