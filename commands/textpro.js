@@ -29,7 +29,6 @@ const execute = async (client, msg, args) => {
                   console.log(data);
                   link = data
                   const media = await MessageMedia.fromUrl(link);
-                  media.catch(() => {});
                   client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
               } catch(err) { 
                   console.error(err)

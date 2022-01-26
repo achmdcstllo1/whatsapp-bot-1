@@ -6,13 +6,12 @@
   */
  
 const { MessageMedia } = require('whatsapp-web.js');
-const { defaultXyz } = require('../index.js');
 
 const execute = async (client, msg) => {
     let quotedMsg = await msg.getQuotedMessage();
     if (quotedMsg.hasMedia) {
         let attachmentData = await quotedMsg.downloadMedia();
-        await client.sendMessage(msg.from, new MessageMedia(attachmentData.mimetype, attachmentData.data, attachmentData.filename), { sendMediaAsSticker: true, stickerAuthor: defaultXyz.author, stickerName: defaultXyz.name});
+        await client.sendMessage(msg.from, new MessageMedia(attachmentData.mimetype, attachmentData.data, attachmentData.filename), { sendMediaAsSticker: true, stickerAuthor: 'Fazil vk', stickerName: 'elsa wa bot'});
     } else {
         await client.sendMessage(msg.from, `🙇‍♂️ *Error*\n\n` + "```No image found to make a Sticker```");
     }
