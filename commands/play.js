@@ -25,8 +25,9 @@ async function execute(client, msg, args) {
         var yt_link = data.source;
         var dl_link = data.url;
         var message = `*${title}* \n\n*YT Link:* ${yt_link}\n\n*Download Link:* ${dl_link}\n\n*© Elsa Wa-Bot*`;
-        const media = await MessageMedia.fromUrl(thumb);
+        const media = await MessageMedia.fromUrl('https://textpro.me/images/user_image/2022/01/61f0fc8386bf6.jpg');
         client.sendMessage(msg.from, media, {caption: message});
+        
     }).catch(function (error) {
     	console.error(error);
         msg.reply("```" + "Result not Found" + "```");
