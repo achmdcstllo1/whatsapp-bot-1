@@ -25,11 +25,11 @@ const execute = async (client, msg, args) => {
         if (splitted[0] == textpr[i].name) {
             thiccysapi.textpro(textpr[i].url, splitted[1])
             .then(async (data) => { 
+                const media = await MessageMedia.fromUrl(link);
+                client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
               try { 
                   console.log(data);
                   link = data
-                  const media = await MessageMedia.fromUrl(link);
-                  client.sendMessage(msg.from, media, {caption: "*©️ Elsa Wa-Bot*"});
               } catch(err) { 
                   console.error(err)
                   msg.reply("```" + "Error occured" + "```");
