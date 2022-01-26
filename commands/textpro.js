@@ -24,7 +24,7 @@ const execute = async (client, msg, args) => {
     for (var i = 0; i < textpr.length; i++) {
         if (splitted[0] == textpr[i].name) {
             thiccysapi.textpro(textpr[i].url, splitted[1])
-            .then(async function (data) { 
+            .then(async (data) => { 
               try { 
                   console.log(data);
                   link = data
