@@ -38,7 +38,6 @@ const execute = async (client, msg, args) => {
                       .catch(error => {  
                       console.log(error);  
                   });  
-                  msg.reply(data + '\n\n©️ Elsa wa bot').catch(err => console.log(err));
               } catch(err) { 
                   console.error(err)
                   msg.reply("```" + "Error occured" + "```");
