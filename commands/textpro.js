@@ -31,7 +31,7 @@ const execute = async (client, msg, args) => {
               try { 
                   console.log(data);
                   axios.get(data, {responseType: "stream"} )  
-                  .then(response => {  
+                  .then(async response => {  
                   // Saving file to working directory  
                       response.data.pipe(fs.createWriteStream("../temp/textpro.jpg"));
                       await client.sendMessage(msg.from, MessageMedia.fromFilePath("../temp/textpro.jpg"), {caption: '*© Elsa Wa-Bot*'});  
