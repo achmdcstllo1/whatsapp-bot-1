@@ -7,7 +7,6 @@
  
 const thiccysapi = require('@phaticusthiccy/open-apis');
 const textpr = require('../textpro/textpros.json');
-const { MessageMedia } = require('whatsapp-web.js');
 
 function splitStr(str, separator) {
     var string = str.split(separator);
@@ -27,9 +26,7 @@ const execute = async (client, msg, args) => {
             .then(async (data) => { 
               try { 
                   console.log(data);
-                  link = data
-                  const media = await MessageMedia.fromUrl(link);
-                  client.sendMessage(msg.from, new MessageMedia(media.mimetype, media.data, media.filename), {caption: "*©️ Elsa Wa-Bot*"}).catch(err => console.log(err));
+                  msg.reply(data + '\n\n©️ Elsa wa bot').catch(err => console.log(err));
               } catch(err) { 
                   console.error(err)
                   msg.reply("```" + "Error occured" + "```");
