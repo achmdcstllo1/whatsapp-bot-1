@@ -33,8 +33,8 @@ const execute = async (client, msg, args) => {
                   axios.get(data, {responseType: "stream"} )  
                   .then(async response => {  
                   // Saving file to working directory  
-                      response.data.pipe(fs.createWriteStream("../temp/textpro.jpg"));
-                      await client.sendMessage(msg.from, MessageMedia.fromFilePath("../temp/textpro.jpg"), {caption: '*© Elsa Wa-Bot*'});  
+                      response.data.pipe(fs.createWriteStream('./temp/textpro.jpg'));
+                      await client.sendMessage(msg.from, MessageMedia.fromFilePath('./temp/textpro.jpg'), {caption: '*© Elsa Wa-Bot*'});  
                   })  
                       .catch(error => {  
                       console.log(error);  
