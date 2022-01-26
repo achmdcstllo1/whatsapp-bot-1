@@ -8,6 +8,7 @@
 const thiccysapi = require('@phaticusthiccy/open-apis');
 const textpr = require('../textpro/textpros.json');
 const axios = require('axios');
+const fs = require('fs');
 const { MessageMedia } = require('whatsapp-web.js');
 
 
