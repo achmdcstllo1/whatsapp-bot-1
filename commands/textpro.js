@@ -32,13 +32,13 @@ const execute = async (client, msg, args) => {
                   axios.get(data, {responseType: "stream"} )  
                   .then(response => {  
                   // Saving file to working directory  
-                      response.data.pipe(fs.createWriteStream("../temp/textpro.jpg"));  
+                      response.data.pipe(fs.createWriteStream("../temp/textpro.jpg"));
+                      await client.sendMessage(msg.from, MessageMedia.fromFilePath("../temp/textpro.jpg"), {caption: '*© Elsa Wa-Bot*'});  
                   })  
                       .catch(error => {  
                       console.log(error);  
                   });  
                   msg.reply(data + '\n\n©️ Elsa wa bot').catch(err => console.log(err));
-                  await client.sendMessage(msg.from, MessageMedia.fromFilePath("../temp/textpro.jpg"), {caption: '*© Elsa Wa-Bot*'});
               } catch(err) { 
                   console.error(err)
                   msg.reply("```" + "Error occured" + "```");
