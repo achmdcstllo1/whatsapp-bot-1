@@ -24,7 +24,7 @@
   }
   
   if (config.HEROKU = 'true') {
-    const ffmpeg = new FFmpeg("ffmpeg");
+    const ffmpeg = FFmpeg("ffmpeg");
     const client = new Client({
       session: sessionData || config.session,
       puppeteer: { headless: true, args: ['--no-sandbox'], },
