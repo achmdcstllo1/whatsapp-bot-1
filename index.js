@@ -15,7 +15,6 @@
   var link = "https://chat.whatsapp.com/";
   const config = require("./config");
   var btncmd = require("./commands/btncmds.js");
-
   
   const SESSION_FILE_PATH = './session.json';
   
@@ -24,12 +23,19 @@
     sessionData = require(SESSION_FILE_PATH);
   }
   
- 
-  const client = new Client({
-    session: sessionData || config.session,
-    puppeteer: { headless: true, args: ['--no-sandbox'], },
-    ffmpegPath: ffmpeg,
-  });
+  if (config.HEROKU = 'true') {
+    const ffmpeg = new FFmpeg("ffmpeg");
+    const client = new Client({
+      session: sessionData || config.session,
+      puppeteer: { headless: true, args: ['--no-sandbox'], },
+      ffmpegPath: ffmpeg,
+    });
+  }else{
+    const client = new Client({
+      session: sessionData || config.session,
+      puppeteer: { headless: true, args: ['--no-sandbox'], },
+    });
+  }
   
   client.commands = new Map();
   
