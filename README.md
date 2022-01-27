@@ -62,6 +62,7 @@ It is a WhatsApp bot and help you as a Assistant
 $ git clone https://github.com/fazil-vk/whatsapp-bot.git
 $ cd whatsapp-bot
 $ npm i
+// Create Config.env and edit it. Examle: https://github.com/Fazil-vk/whatsapp-bot/wiki/config.env-Example
 $ node index.js
 ```
 
