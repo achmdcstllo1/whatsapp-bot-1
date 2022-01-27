@@ -24,11 +24,10 @@
   }
   
   if (config.HEROKU = 'true') {
-    const ffmpeg = FFmpeg("ffmpeg");
     const client = new Client({
       session: sessionData || config.session,
       puppeteer: { headless: true, args: ['--no-sandbox'], },
-      ffmpegPath: ffmpeg,
+      executablePath: "/root/whatsapp-bot/.apt/usr/bin/google-chrome",
     });
   }else{
     const client = new Client({
