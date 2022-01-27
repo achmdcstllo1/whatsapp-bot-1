@@ -28,7 +28,7 @@
     puppeteer: { headless: true, args: ['--no-sandbox'], },
     //if you are using railway or other, then change remove this paths. Tis is only for heroku
     executablePath: "/root/whatsapp-bot/.apt/usr/bin/google-chrome",
-    ffmpegPath: "/root/whatsapp-bot/.apt/usr/bin/ffmpeg",
+    ffmpegPath: "ffmpeg",
   });
   
   client.commands = new Map();
