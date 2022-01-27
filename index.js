@@ -23,18 +23,11 @@
     sessionData = require(SESSION_FILE_PATH);
   }
   
-  if (config.HEROKU = 'true') {
-    const client = new Client({
-      session: sessionData || config.session,
-      puppeteer: { headless: true, args: ['--no-sandbox'], },
-      executablePath: "/root/whatsapp-bot/.apt/usr/bin/google-chrome",
-    });
-  }else{
-    const client = new Client({
-      session: sessionData || config.session,
-      puppeteer: { headless: true, args: ['--no-sandbox'], },
-    });
-  }
+  const client = new Client({
+    session: sessionData || config.session,
+    puppeteer: { headless: true, args: ['--no-sandbox'], },
+    executablePath: "/root/whatsapp-bot/.apt/usr/bin/google-chrome",
+  });
   
   client.commands = new Map();
   
