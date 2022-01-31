@@ -52,6 +52,8 @@ It is a WhatsApp bot and help you as a Assistant
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fazil-vk/whatsapp-bot/tree/master)
 
+Facing violation issue on heroku [Read This](https://github.com/Fazil-vk/whatsapp-bot/wiki/Heroku-Building-Problem)
+
 ### or
 
 [![Railway](https://camo.githubusercontent.com/081df3dd8cff37aab35044727b02b94a8e948052487a8c6253e190f5940d776d/68747470733a2f2f7261696c7761792e6170702f627574746f6e2e737667)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Ffazil-vk%2Fwhatsapp-bot&plugins=&envs=SESSION%2CAI_CHAT_ENABLED&SESSIONDesc=Session+ID.+Get+it+by+running+server.js+or+Read+Wiki+for+full+Details&AI_CHAT_ENABLEDDesc=If+you+want+enable+AI+chat+bot,+Then+replace+value+as+true&AI_CHAT_ENABLEDDefault=false&referralCode=fazil)
