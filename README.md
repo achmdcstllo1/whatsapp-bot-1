@@ -29,7 +29,7 @@ It is a WhatsApp bot and help you as a Assistant
     <img src="https://img.shields.io/static/v1?label=Author&message=Fazil%20vk&color=blue&style=plastic">
   </a>
   <br>
-  <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ffazil-vk.github.io%2FRandom-Number-Picker%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+  <a href="https://github.com/fazil-vk"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ffazil-vk.github.io%2FRandom-Number-Picker%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
 </p>
 
 <div align="center">
