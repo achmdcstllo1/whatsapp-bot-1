@@ -43,7 +43,7 @@ async function execute(client, msg, args) {
 
 module.exports = {
     name: "tweet",
-    description: "Download Facebook videos",
+    description: "To create a tweet Image ```!tweet <username>|<text>```",
     command: "!tweet",
     commandType: "plugin",
     isDependent: false,
