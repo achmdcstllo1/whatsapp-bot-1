@@ -26,9 +26,10 @@
   const client = new Client({
     session: sessionData || config.session,
     puppeteer: { headless: true, args: ['--no-sandbox'], },
-    //if you are using railway or other, then change remove this paths. Tis is only for heroku
-    executablePath: "/root/whatsapp-bot/.apt/usr/bin/google-chrome",
-    ffmpegPath: 'ffmpeg',
+
+    //if you are using YOUR OWN SYSTEM, please change the PATH below and uncommand
+    //executablePath: "YOUR\CHROME\PATH",
+    //ffmpegPath: 'YOUR\FFMPEG\PATH',
   });
   
   client.commands = new Map();
