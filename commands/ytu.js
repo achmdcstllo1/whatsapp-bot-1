@@ -5,7 +5,7 @@
   =====================================================
   */
  
-/*
+
 const fs = require('fs');
 const { MessageMedia } = require('whatsapp-web.js');
 const  num = 1;
@@ -34,4 +34,4 @@ module.exports = {
     help: undefined,
     execute,
   };
-  */
+  
