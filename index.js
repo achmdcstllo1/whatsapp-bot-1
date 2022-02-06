@@ -82,7 +82,7 @@
   //--------------------------------------------------
 
 client.on('message', message => {
-  if (message.body === 'Hi') {
+  if (message.body === 'hi') {
     message.reply('Hi 👋🏻, send ```!help``` for More');
   }
 });
