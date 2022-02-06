@@ -37,7 +37,6 @@
     "simple-git": "^2.48.0",
     "serve-index": "^1.9.1",
     "user-instagram-profile": "^1.0.0",
-    "whatsapp-web.js": "^1.15.3",
-    "ytdl-core": "^4.10.1"
+    "whatsapp-web.js": "^1.15.3"
   }
 }
