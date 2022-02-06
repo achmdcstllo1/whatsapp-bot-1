@@ -7,7 +7,6 @@
  
 
 const fs = require('fs');
-const ytdl = require('ytdl-core');
 const { MessageMedia } = require('whatsapp-web.js');
 const  num = 1;
 
