@@ -19,7 +19,7 @@ const execute = async (client, msg) => {
 
 module.exports = {
     name: "textprolist",
-    description: "To grt the list of Textpros",
+    description: "To get the list of Textpros",
     command: "!textprolist",
     commandType: "plugin",
     isDependent: false,

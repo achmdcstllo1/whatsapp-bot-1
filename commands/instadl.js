@@ -31,7 +31,7 @@ async function execute(client, msg, args) {
 
 module.exports = {
     name: "instadl",
-    description: "Download instagram Posts. *NOT REELS, ONLY POSTS*",
+    description: "Download from instagram",
     command: "!instadl",
     commandType: "plugin",
     isDependent: false,

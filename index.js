@@ -99,7 +99,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  let sections = [{ title: 'Categories', rows: [{ title: 'General' }, { title: 'Social Media' }, { title: 'Sticker' }, { title: 'Admin' }, { title: 'Random' }] }];
+  let sections = [{ title: 'Categories', rows: [{ title: 'General' }, { title: 'Social Media' }, { title: 'Sticker' }, { title: 'Admin' }, { title: 'Random' }, { title: 'Images' }] }];
   let list = new List('\n```Commands by Category.\nYou can choose category from below selection buttons```', 'Elsa Wa-Bot', sections, '*Elsa Wa-Bot*', 'footer');
   if (message.body === 'Commands') {
     client.sendMessage(message.from, list); 
@@ -133,6 +133,12 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.body === 'Random') {
     message.reply(btncmd.r_cmds);
+  }
+});
+
+client.on('message', message => {
+  if (message.body === 'Images') {
+    message.reply(btncmd.i_cmds);
   }
 });
 
