@@ -24,6 +24,7 @@
     "Elsa Wa-Bot"
   ],
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@phaticusthiccy/open-apis": "github:phaticusthiccy/Open-APIs",
     "axios": "^0.24.0",
     "child_process": "^1.0.2",

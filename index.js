@@ -26,7 +26,7 @@
   const client = new Client({
     session: sessionData || config.session,
     puppeteer: { headless: true, args: ['--no-sandbox'], },
-    ffmpegPath: require('fluent-ffmpeg'),
+    ffmpegPath: require('@ffmpeg-installer/ffmpeg').path,
     //if you are using YOUR OWN SYSTEM, please change the PATH below and uncommand
     //executablePath: "YOUR\CHROME\PATH",
     //ffmpegPath: 'YOUR\FFMPEG\PATH',
