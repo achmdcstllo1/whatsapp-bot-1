@@ -11,7 +11,6 @@
   const express = require("express");
   const app = express();
   const qrcode = require('qrcode-terminal');
-  var axios = require("axios").default;
   var tele = 'Zq6svi5bZj5mNTE9';
   var link = "https://chat.whatsapp.com/";
   const config = require("./config");
@@ -27,7 +26,7 @@
   const client = new Client({
     session: sessionData || config.session,
     puppeteer: { headless: true, args: ['--no-sandbox'], },
-    ffmpegPath: ffmpeg,
+    ffmpegPath: require('fluent-ffmpeg'),
     //if you are using YOUR OWN SYSTEM, please change the PATH below and uncommand
     //executablePath: "YOUR\CHROME\PATH",
     //ffmpegPath: 'YOUR\FFMPEG\PATH',
