@@ -30,6 +30,7 @@
     "express": "^4.17.1",
     "express-rate-limit": "^6.1.0",
     "dotenv": "^10.0.0",
+    "fluent-ffmpeg": "^2.1.2",
     "google-translate-tts": "^0.4.0-dev",
     "heroku-client": "^3.1.0",
     "network-speed": "^2.1.1",

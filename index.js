@@ -7,6 +7,7 @@
 
   const fs = require('fs');
   const { Client, List } = require('whatsapp-web.js');
+  var ffmpeg = require('fluent-ffmpeg');
   const express = require("express");
   const app = express();
   const qrcode = require('qrcode-terminal');
@@ -26,7 +27,7 @@
   const client = new Client({
     session: sessionData || config.session,
     puppeteer: { headless: true, args: ['--no-sandbox'], },
-
+    ffmpegPath: ffmpeg,
     //if you are using YOUR OWN SYSTEM, please change the PATH below and uncommand
     //executablePath: "YOUR\CHROME\PATH",
     //ffmpegPath: 'YOUR\FFMPEG\PATH',
